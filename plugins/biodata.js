@@ -5,15 +5,14 @@ let handler = async (m, { conn, text }) => {
 let logo = global.logoowner
   let ext= `
 *───────[ BIODATA OWNER ]───────*
-*💌 Nama* : Letta
-*🎨 Umur* : 11
-*🧮 Kelas* : 6
+*💌 Nama* : Putbotz
+*🎨 Umur* : 15
 *📈 Status* : Busy
-
+*🇲🇾 Malaysia*
 *───────[ SOSIAL MEDIA ]───────*
-*📷 instagran* : @ppiowy_
-*🇫  Facebook* : none
-*🏮 Chanel Youtube* : none
+*📷 instagran* : @whooputt
+*☢️ Github* : Putbotz
+*🏮 Chanel Youtube* : Putbotz
 `
 let name = await conn.getName(m.sender)
 
@@ -28,12 +27,12 @@ let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ?
         "productId": "4938174216214248",
         "title": "───────[ OWNER ]───────",
         "description": '\n\n' + ext,
-        "retailerId": "Itu Owner ku ya ^~^",
+        "retailerId": "Itu Owner Gw Oy",
         "url": '',
         "descriptionCount": "999999999",
         "productImageCount": "1",
       },
-      "businessOwnerJid": "62831433937633@s.whatsapp.net",
+      "businessOwnerJid": "60147366955@s.whatsapp.net",
       "contextInfo": {
         "forwardingScore": 9999,
         "isForwarded": false
@@ -44,9 +43,9 @@ let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ?
   conn.relayWAMessage(res)
 
 }
-handler.help = ['owner', 'creator']
+handler.help = ['owner', 'biodata']
 handler.tags = ['info']
-handler.command = /^(owner|creator)$/i
+handler.command = /^(biodata)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

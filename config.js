@@ -51,7 +51,7 @@ function pickRandom(list) {
 
 global.DeveloperMode = 'false' //Buat Mode True False Moderator
 global.linkGC = ['https://chat.whatsapp.com/Hjr3H7l9iC8F2deP0cv6GT'] // ganti jadi group lu
-global.owner = ['62831433937633','6283845403062','6288217277973','62831433937630','6285704954639', '62895336282144', '6285712420674'] // Put your number here
+global.owner = ['60147366955'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -88,11 +88,11 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '🌙 Ƙαnnα вσт\nwa.me/6283143393763\n\n\n𝙱𝚢 𝙻𝚎𝚝𝚝𝚊 あ\n\n\nFollow IG: @ppiowy_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.'
+global.packname = '🧃 Putbotz\nwa.me/60147366955\n\n\nBy Put あ\n\n\nFollow IG: @whooputt\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.'
 global.author = '۰ ⸼'
 
 // silakan di ganti klo mau
-global.botwm = `🎮 Ƙαnnα вσт`//UBAH JADI NAMAMU
+global.botwm = `Putbotz 🧃`//UBAH JADI NAMAMU
 global.botdate = `╭──────────═┅═─────────\n│◪ ${time}\n┊◪ ${week} ${date}\n╰──────────═┅═─────────`
 global.imagebot = `https://telegra.ph/file/793b6accf3758f092742a.jpg`
 global.logo = fs.readFileSync('./src/logo3.jpg')
@@ -106,7 +106,7 @@ global.CanvasAPI = '';
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 // tingkat kesulitan, semakin tinggi semakin susah
-global.multiplier = 16 // The higher, The harder levelup
+global.multiplier = 999999 // The higher, The harder levelup
 
 //*****************PEMBATAS*********************
 // JANGAN DI GANTI NTAR KLO GABISA JAN TANYA GW

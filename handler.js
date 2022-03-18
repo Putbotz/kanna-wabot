@@ -422,15 +422,15 @@ module.exports = {
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = ''
           if (!('sDemote' in chat)) chat.sDemote = ''
-          if (!('descUpdate' in chat)) chat.descUpdate = true
+          if (!('descUpdate' in chat)) chat.descUpdate = false
           if (!('delete' in chat)) chat.delete = false
-          if (!('antiBadword' in chat)) chat.antiBadword = true
-          if (!('rpg' in chat)) chat.delete = true
-          if (!('nsfw' in chat)) chat.delete = true
+          if (!('antiBadword' in chat)) chat.antiBadword = false
+          if (!('rpg' in chat)) chat.delete = false
+          if (!('nsfw' in chat)) chat.delete = false
           if (!('antiLink' in chat)) chat.antiLink = false
-          if (!('viewonce' in chat)) chat.viewonce = true
+          if (!('viewonce' in chat)) chat.viewonce = false
           if (!('simi' in chat)) chat.sPromote = false
-          if (!('nsfw' in chat)) chat.nsfw = true
+          if (!('nsfw' in chat)) chat.nsfw = false
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
           welcome: false,
@@ -439,7 +439,7 @@ module.exports = {
           sBye: '',
           sPromote: '',
           sDemote: '',
-          descUpdate: true,
+          descUpdate: false,
           delete: false,
           rpg: true,
           nsfw: true,
@@ -467,12 +467,12 @@ module.exports = {
           anticall: true,
           antispam: true,
           antitroli: false,
-          backup: true,
+          backup: false,
           backupDB: 0,
           groupOnly: false,
-          jadibot: false,
-          nsfw: true,
-          onsfw: true,
+          jadibot: true,
+          nsfw: false,
+          onsfw: false,
           status: 0,
         }
       } catch (e) {
@@ -759,7 +759,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
             "fileLength": "99999999999999",
             "pageCount": 100,
             "mediaKey": "XWv4hcnpGY51qEVSO9+e+q6LYqPR3DbtT4iqS9yKhkI=",
-            "fileName": 'Creαted by : ℓettα - sαmα ♡',
+            "fileName": 'Creαted by : 𝔓𝔲𝔱𝔟𝔬𝔱𝔷🧃',
             "fileEncSha256": "NI9ykWUcXKquea4BmH7GgzhMb3pAeqqwE+MTFbH/Wk8=",
             "directPath": "/v/t62.7118-24/35150115_287008086621545_8250021012380583765_n.enc?ccb=11-4&oh=6f0f730e5224c054969c276a6276a920&oe=61A21F46",
             "mediaKeyTimestamp": "1634472176",
@@ -776,7 +776,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
         if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         let banp = fs.readFileSync('./src/kanna.jpg')
-        if (chat.detect) this.send2ButtonLoc(jid, banp, text, '🎮 Ƙαnnα вσт', 'MENU', '#menu', 'OWNER', '#owner', null, {
+        if (chat.detect) this.send2ButtonLoc(jid, banp, text, 'Putbotz🧃', 'MENU', '#menu', 'OWNER', '#owner', null, {
           contextInfo: {
             mentionedJid: this.parseMention(text)
           }
@@ -795,7 +795,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
 *◇ Number*: ${require('awesome-phonenumber')(`+${m.participant.split`@`[0]}`).getNumber('international')}
 
 klick untuk mematikannya atau ketik #disable delete
-`.trim(), '🎮 Ƙαnnα вσт', 'DISABLE DELETE', '.disable delete', {
+`.trim(), 'Putbotz🧃', 'DISABLE DELETE', '.disable delete', {
       quoted: m.message,
       contextInfo: {
         mentionedJid: [m.participant]
@@ -855,7 +855,7 @@ Halo kak @${syappa.replace(/@.+/, '')} !
 Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot 🗂️
     
 📍 *Ketik :* #daftar nama.umur
-⤿ *Contoh :* #daftar ${namae}.13`
+⤿ *Contoh :* #daftar ${namae}.19`
 }[type]
   if (msgg) return conn.sendButton(m.chat, msgg, botdate + '\n' + global.wm, 'Verify', `.daftar ${namae}.18`, m, { contextInfo: { mentionedJid: [syappa] }})
 }

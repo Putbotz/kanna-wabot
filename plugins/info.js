@@ -47,7 +47,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let str = `
                *ℒ⃝👾 B O T  S T A T I S T I C*
                
-👩🏻‍💻 *Owner:* wa.me/6285712420674
+👩🏻‍💻 *Owner:* wa.me/60147366955
 🧪 *Mode:* ${global.opts['self'] ? 'Private' : 'Publik'}
 📊 *Versi:* ${package.version}
 💻 *Platform:* Unbuntu Linux
@@ -55,8 +55,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🏮 *Type:* NodeJs
 🧿 *Server:* ${os.hostname()}
 🔎 *Browser:* ${conn.browserDescription[1]}
-*🏢 Hostname:* ${conn.browserDescription[0]}
-📢 *Report:* wa.me/6285712420674
+*🏢 Hostname:* Putbotz
+📢 *Report:* wa.me/60147366955
 ⭕ *Prefix:* (# / ! .)
 🍃 *Speed:* ${neww - old} *ms*
 👥 *Total user:* ${totalreg} *user*
@@ -76,20 +76,14 @@ let handler  = async (m, { conn, usedPrefix }) => {
 
 *ℒ⃝💻C O N N E C T  W I T H  M E*
 
-⛎ *Api:* http://api-alphabot.herokuapp.com
-♈ *Youtube:* http://youtube.com/c/zeeoneofc
-♉ *Github:* http://zeeoneofc.github.io
-♊ *Insragram:* http://instagram.com/_ppiowy
-♋ *Tiktok:* http://tiktok.com/@zeeoneofc
-♌ *Telegram:* http://t.me/zeeoneofc
-♎ *Ch telegram:* http://t.me/zeeone_ofc
-♏ *Whatsapp:* wa.me/6285712420674
-
-
-
-
+♈ *Youtube:* https://youtube.com/channel/UCA_wQ8H5liNX9slHvAMg-BA
+♉ *Github:* http://github.com/Putbotz
+♊ *Instagram:* http://instagram.com/whooputt
+♋ *Tiktok:* tiktok.com/@simp4puputtt
+♌ *Telegram:* http://t.me/@putxd
+♏ *Whatsapp:* wa.me/60147366955
 `.trim()
-conn.sendButton(m.chat, str, `${botol}`, 'GROUP BOT', '.gcbot', m)
+conn.sendButton(m.chat, str, `Putbotz`, '© PUTBOTZ', '.nowner', m)
 
 }
 handler.help = ['info']

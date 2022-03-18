@@ -1,22 +1,12 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let fetch = require('node-fetch')
-let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Source+code'
-let info = `╭═[ *SCRIPT* ]═────···
-┴
-│ *Script :* 60K (No node_module)
-│ *Base :*
-│ ╰ https://github.com/nurutomo/wabot-aq
-│ *RestApi :* 
-│ ╰ https://hardianto.xyz
-┬
-╰──────────═┅═──────────
-[❗] Jangan diperjual belikan tanpa seizin owner
+let info = `
+udh 2022 masih ngemis sc banh? wkwk
 `.trim()
-await conn.send2Button(m.chat, info, `${botol}`, '⋮☰ Back', '.menu', 'Owner', '.nowner', m)
-conn.reply(info)
+
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*✧──────────···──────────✧*\n                   Putbotz Ganteng`, 'status@broadcast')
 }
 handler.help = ['sc']
-handler.tags = ['tutor']
+handler.tags = ['info']
 handler.command = /^(sc)$/i
 handler.owner = false
 handler.mods = false
@@ -31,5 +21,3 @@ handler.fail = null
 handler.limit = false
 
 module.exports = handler
-
-let botol = global.botwm

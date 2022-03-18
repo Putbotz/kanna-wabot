@@ -269,10 +269,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┬
 ├━━━━━━━━━━━━━━━━┈─⋆
 │ ▸ *Author :* Nurutomo
-┴ ▸ *Owner :* Letta
+┴ ▸ *Owner :* Putbotz
 ✧
 ┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ Tolong jangan dispam ya biar ga delay
+│ Botnya suka off maaf ya
 ╰━━━━━━━━━━━━━━━━┈─◂
      ▌│█║▌║▌║║▌║▌║█│▌
      
